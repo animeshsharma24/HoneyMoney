@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Background Outer Gradient -->
+    <radialGradient id="bgGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1E190E" />
+      <stop offset="50%" stop-color="#0E0C08" />
+      <stop offset="100%" stop-color="#050504" />
+    </radialGradient>
+
+    <!-- Metallic Gold Outer Hexagon -->
+    <linearGradient id="goldEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2A3" />
+      <stop offset="25%" stop-color="#F5B025" />
+      <stop offset="50%" stop-color="#9E5D04" />
+      <stop offset="75%" stop-color="#FAD768" />
+      <stop offset="100%" stop-color="#BF780E" />
+    </linearGradient>
+
+    <!-- Inner Honeycomb Glass Shimmer -->
+    <radialGradient id="honeyCell" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FCD34D" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#D97706" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#78350F" stop-opacity="0.05" />
+    </radialGradient>
+
+    <!-- Rich Gold Embossed Symbol -->
+    <linearGradient id="rupeeGold" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="20%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="85%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <!-- Filter for 3D Drop Shadow & Glow -->
+    <filter id="honeyGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#F59E0B" flood-opacity="0.28" />
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <filter id="symbolShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.8" />
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#FFE885" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base for App Launcher -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" stroke="#E5A93C" stroke-width="2" stroke-opacity="0.3" />
+
+  <!-- Ambient Light Reflection -->
+  <circle cx="256" cy="180" r="160" fill="#F59E0B" opacity="0.08" filter="blur(40px)" />
+
+  <!-- Outer Honeycomb Hexagon with Metallic Gold Bevel -->
+  <g filter="url(#honeyGlow)">
+    <polygon points="256,64 426,162 426,350 256,448 86,350 86,162" 
+             fill="#14110A" 
+             stroke="url(#goldEdge)" 
+             stroke-width="12" 
+             stroke-linejoin="round" />
+  </g>
+
+  <!-- Inner Honeycomb Glass Facet -->
+  <polygon points="256,98 396,178 396,334 256,414 116,334 116,178" 
+           fill="url(#honeyCell)" 
+           stroke="url(#goldEdge)" 
+           stroke-width="4" 
+           stroke-opacity="0.6"
+           stroke-linejoin="round" />
+
+  <!-- Honeycomb Top Specular Highlight Arc -->
+  <path d="M128,172 L256,98 L384,172" 
+        stroke="#FFF8D6" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        opacity="0.75" />
+
+  <!-- Bold Embossed Rupee Currency Symbol (₹) -->
+  <!-- Top Horizontal Bar -->
+  <g filter="url(#symbolShadow)">
+    <path d="M192,188 L320,188" 
+          stroke="url(#rupeeGold)" 
+          stroke-width="24" 
+          stroke-linecap="round" />
+    
+    <!-- Second Horizontal Bar -->
+    <path d="M192,236 L308,236" 
+          stroke="url(#rupeeGold)" 
+          stroke-width="24" 
+          stroke-linecap="round" />
+
+    <!-- Stem & Upper Curve -->
+    <path d="M228,188 L228,268 C276,268 296,252 296,220 C296,188 276,188 228,188" 
+          stroke="url(#rupeeGold)" 
+          stroke-width="24" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+
+    <!-- Dynamic Diagonal Leg -->
+    <path d="M224,264 L316,368" 
+          stroke="url(#rupeeGold)" 
+          stroke-width="26" 
+          stroke-linecap="round" />
+  </g>
+
+  <!-- Little Golden Honey Drops on Lower Tip -->
+  <circle cx="256" cy="402" r="5" fill="#FDE68A" opacity="0.9" />
+</svg>

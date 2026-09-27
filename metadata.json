@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Honeymoney",
+  "description": "Manual-first personal spending memory with SMS transaction reading, continuous merchant learning, swipeable card deck, and enriched Credit Card statements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

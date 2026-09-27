@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honeymoney App Drawer Mockup Preview</title>
+  <link rel="icon" type="image/svg+xml" href="/honeymoney-icon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #050806;
+      color: #E2E8F0;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
+
+  <div class="max-w-md w-full">
+    <!-- Header -->
+    <div class="text-center mb-6">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-[#E5A93C]/10 text-[#E5A93C] border border-[#E5A93C]/30 mb-2">
+        Mobile OS Simulation
+      </span>
+      <h1 class="text-2xl font-bold text-white tracking-tight">Android App Drawer Preview</h1>
+      <p class="text-xs text-slate-400 mt-1">Simulated Android 14 / One UI app drawer grid with Honeymoney</p>
+    </div>
+
+    <!-- Phone Frame -->
+    <div class="relative mx-auto rounded-[44px] p-3 bg-gradient-to-b from-[#1b2b20] to-[#0d1610] shadow-2xl border-4 border-[#223d2e]">
+      
+      <!-- Screen -->
+      <div class="rounded-[36px] bg-[#070b09] overflow-hidden border border-white/5 p-5 relative min-h-[640px] flex flex-col justify-between">
+        
+        <!-- Status Bar -->
+        <div class="flex items-center justify-between text-xs text-slate-400 px-2 pt-1 pb-4">
+          <span class="font-semibold text-white">9:41</span>
+          <div class="flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 4C7.31 4 3.07 5.9 0 8.98L12 21 24 8.98C20.93 5.9 16.69 4 12 4z"/></svg>
+            <div class="w-5 h-2.5 border border-slate-400 rounded-sm p-0.5 flex items-center">
+              <div class="w-full h-full bg-[#E5A93C] rounded-2xs"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Drawer Search Bar -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl px-4 py-2.5 flex items-center gap-3 text-slate-400 text-xs mb-6 shadow-inner">
+          <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <span class="text-slate-500 font-medium">Search apps...</span>
+        </div>
+
+        <!-- App Grid -->
+        <div class="grid grid-cols-4 gap-y-6 gap-x-3 text-center my-auto">
+          
+          <!-- App 1: Camera -->
+          <div class="flex flex-col items-center gap-1.5 group">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-slate-700 to-slate-500 flex items-center justify-center shadow-md">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <span class="text-[11px] text-slate-300 font-medium">Camera</span>
+          </div>
+
+          <!-- App 2: Chrome -->
+          <div class="flex flex-col items-center gap-1.5">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-red-500 via-amber-400 to-emerald-500 flex items-center justify-center shadow-md">
+              <div class="w-6 h-6 rounded-full bg-blue-500 border-2 border-white"></div>
+            </div>
+            <span class="text-[11px] text-slate-300 font-medium">Chrome</span>
+          </div>
+
+          <!-- App 3: Maps -->
+          <div class="flex flex-col items-center gap-1.5">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center shadow-md">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <span class="text-[11px] text-slate-300 font-medium">Maps</span>
+          </div>
+
+          <!-- App 4: Photos -->
+          <div class="flex flex-col items-center gap-1.5">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 to-pink-500 flex items-center justify-center shadow-md">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <span class="text-[11px] text-slate-300 font-medium">Photos</span>
+          </div>
+
+          <!-- App 5: HONEYMONEY -->
+          <div class="flex flex-col items-center gap-1.5">
+            <div class="w-14 h-14 rounded-2xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-200">
+              <img src="/honeymoney-icon.svg" alt="Honeymoney App Icon" class="w-full h-full object-cover" />
+            </div>
+            <span class="text-[11px] text-white font-bold tracking-tight">Honeymoney</span>
+          </div>
+
+          <!-- App 6: Spotify -->
+          <div class="flex flex-col items-center gap-1.5">
+            <div class="w-14 h-14 rounded-2xl bg-[#1DB954] flex items-center justify-center shadow-md">
+              <svg class="w-7 h-7 text-black fill-current" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.625.625 0 01-.86.208c-2.355-1.439-5.32-1.764-8.812-.966a.625.625 0 11-.277-1.22c3.818-.872 7.106-.505 9.74 1.107a.625.625 0 01.209.871zm1.227-2.73a.78.78 0 01-1.074.258c-2.695-1.656-6.804-2.134-9.992-1.166a.78.78 0 11-.453-1.494c3.64-1.105 8.18-.574 11.26 1.328a.78.78 0 01.259 1.074zm.106-2.84c-3.232-1.92-8.563-2.096-11.64-1.162a.936.936 0 11-.539-1.792c3.535-1.073 9.42-.871 13.123 1.328a.936.936 0 01-.944 1.626z"/></svg>
+            </div>
+            <span class="text-[11px] text-slate-300 font-medium">Spotify</span>
+          </div>
+
+          <!-- App 7: Play Store -->
+          <div class="flex flex-col items-center gap-1.5">
+            <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-md">
+              <svg class="w-7 h-7" viewBox="0 0 24 24"><path fill="#4285F4" d="M3.609 1.814L13.792 12 3.61 22.186c-.37-.417-.61-.986-.61-1.636V3.45c0-.65.24-1.22.61-1.636z"/><path fill="#34A853" d="M17.18 8.61L13.792 12l3.388 3.39 3.82-2.17c1.3-.74 1.3-1.95 0-2.69l-3.82-2.17z"/><path fill="#FBBC04" d="M3.609 1.814L17.18 9.53 13.792 12 3.61 1.814z"/><path fill="#EA4335" d="M13.792 12l3.388 2.47-13.57 7.716L13.792 12z"/></svg>
+            </div>
+            <span class="text-[11px] text-slate-300 font-medium">Play Store</span>
+          </div>
+
+          <!-- App 8: Settings -->
+          <div class="flex flex-col items-center gap-1.5">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-slate-600 to-slate-700 flex items-center justify-center shadow-md">
+              <svg class="w-7 h-7 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <span class="text-[11px] text-slate-300 font-medium">Settings</span>
+          </div>
+
+        </div>
+
+        <!-- Navigation Bar Indicator -->
+        <div class="flex justify-center pb-2 pt-6">
+          <div class="w-32 h-1 bg-white/20 rounded-full"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Direct Links & Actions -->
+    <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 text-xs">
+      <a href="/honeymoney-icon.svg" target="_blank" class="w-full sm:w-auto text-center px-4 py-2.5 rounded-xl bg-[#E5A93C] text-black font-bold hover:bg-[#f3c766] transition-colors shadow-lg shadow-[#E5A93C]/20">
+        Open Raw Icon SVG
+      </a>
+      <a href="/honeymoney-logo.svg" target="_blank" class="w-full sm:w-auto text-center px-4 py-2.5 rounded-xl bg-white/10 text-white font-medium hover:bg-white/20 transition-colors border border-white/10">
+        Open Raw Logo SVG
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>

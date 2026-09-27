@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Honeymoney</string>
+    <string name="title_activity_main">Honeymoney</string>
+    <string name="package_name">com.honeymoney.app</string>
+    <string name="custom_url_scheme">com.honeymoney.app</string>
+</resources>

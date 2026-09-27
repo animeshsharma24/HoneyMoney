@@ -1,0 +1,8 @@
+{
+  "appId": "com.honeymoney.app",
+  "appName": "Honeymoney",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
